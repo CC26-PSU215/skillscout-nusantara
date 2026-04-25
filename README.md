@@ -1,8 +1,8 @@
 ## SkillScout Nusantara
 AI-powered job matching platform for Indonesia
 
-**Org**: github.com/skillscout-team
-**Project Period**: April 24 - June 5, 2026
+**Org**: github.com/skillscout-team  
+**Project Period**: April 24 - June 5, 2026  
 **Team Members**: 
 - Muhammad Fikran Naufal
 - Orellius Lee
