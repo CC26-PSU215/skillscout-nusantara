@@ -6,7 +6,7 @@ AI-powered job matching platform for Indonesia
 **Team Members**: [names here]
 
 ## Quick Start
-git clone https://github.com/skillscout-team/skillscout-nusantara.git
+git clone https://github.com/CC26-PSU215/skillscout-nusantara.git
 cd skillscout-nusantara
 docker-compose up
 
