@@ -37,16 +37,6 @@ Proyek ini dikembangkan oleh Tim **CC26-PSU215** dalam rangka Capstone Coding Ca
 
 ---
 
-## 💻 Cara Run di Local (Local Development)
-
-Pastikan Anda sudah menginstal **Node.js**, **Python 3.10+**, dan **PostgreSQL** di sistem Anda. Panduan di bawah ini disesuaikan untuk dijalankan melalui terminal Windows (PowerShell/Command Prompt).
-
-### 1. Clone Repository
-```bash
-git clone [https://github.com/username-kalian/skillscout-nusantara.git](https://github.com/username-kalian/skillscout-nusantara.git)
-cd skillscout-nusantara
-```
-
 ### 📂 File Structure
 
 Struktur direktori proyek ini menggunakan pendekatan **Monorepo** untuk memisahkan antara lingkungan pengembangan Frontend dan Backend/AI.
@@ -97,6 +87,16 @@ skillscout-nusantara/
 ```
 
 ---
+
+## 💻 Cara Run di Local (Local Development)
+
+Pastikan Anda sudah menginstal **Node.js**, **Python 3.10+**, dan **PostgreSQL** di sistem Anda. Panduan di bawah ini disesuaikan untuk dijalankan melalui terminal Windows (PowerShell/Command Prompt).
+
+### 1. Clone Repository
+```bash
+git clone [https://github.com/username-kalian/skillscout-nusantara.git](https://github.com/username-kalian/skillscout-nusantara.git)
+cd skillscout-nusantara
+```
 
 ## 🏃‍♂️ Menjalankan Aplikasi Secara Lokal (Tanpa Docker)
 
