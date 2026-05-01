@@ -1,0 +1,53 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: skillscout_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: supersecretpassword
+      POSTGRES_DB: skillscout_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+    container_name: skillscout_backend
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:supersecretpassword@db:5432/skillscout_db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app # Hot-reload untuk development
+    # Uncomment baris di bawah ini jika menggunakan Traefik sebagai reverse proxy nantinya
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.backend.rule=Host(`api.skillscout.local`)"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: skillscout_frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app # Hot-reload untuk development
+      - /app/node_modules
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.frontend.rule=Host(`skillscout.local`)"
+
+volumes:
+  postgres_data:
