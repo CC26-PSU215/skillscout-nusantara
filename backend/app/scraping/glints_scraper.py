@@ -7,7 +7,7 @@ from pathlib import Path
 
 class GlintsScraper:
     def __init__(self):
-        self.base_url = "https://glints.com/opportunities/jobs/explore"
+        self.base_url = "https://glints.com/id/job-category/computer-software"
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         }
