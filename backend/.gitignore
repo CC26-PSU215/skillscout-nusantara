@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+#tes.py
+
+
+# Vercel
+.vercel/
+
+# ML model artifacts (di-download saat deploy, bukan di-commit)
+app/ml/*.keras
+app/ml/*.h5
+app/ml/*.pkl
+app/ml/*.joblib
+
+# DOC
+docs/*
+
+#supabase
+supabase/*
+
+
