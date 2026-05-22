@@ -1,0 +1,101 @@
+cv_id,name,experience_level,years_experience,email,phone,location,education_degree,education_field,technical_skills,soft_skills,num_jobs,num_certifications
+mid_00000,Mid_Prof_000,mid,4,mid0@email.com,+62-812-31526360,Jakarta,Bachelor,Engineering,"C++,Google Cloud,React,JavaScript,SQL,REST API","Mentoring,Team Management,Leadership",3,2
+mid_00001,Mid_Prof_001,mid,4,mid1@email.com,+62-812-60745330,Bali,Bachelor,Information Systems,"NumPy,Angular,PyTorch,TensorFlow,Agile,Kubernetes","Adaptability,Time Management,Creativity",2,1
+mid_00002,Mid_Prof_002,mid,2,mid2@email.com,+62-812-11001203,Bandung,Master,Computer Science,"CI/CD,Python,ElasticSearch,Redis,PyTorch,FastAPI","Project Management,Stakeholder Management,Presentation",2,3
+mid_00003,Mid_Prof_003,mid,2,mid3@email.com,+62-812-10394776,Bali,Bachelor,Computer Science,"Git,PyTorch,Kubernetes,REST API,PostgreSQL,Spring Boot","Problem Solving,Communication,Leadership",4,1
+mid_00004,Mid_Prof_004,mid,3,mid4@email.com,+62-812-54910189,Surabaya,Diploma,Information Technology,"Microservices,SQL,Angular,Java,PostgreSQL,C++","Creativity,Time Management,Problem Solving",3,3
+mid_00005,Mid_Prof_005,mid,4,mid5@email.com,+62-812-18512799,Jakarta,Bachelor,Information Systems,"Kubernetes,Pandas,Linux,PostgreSQL,Spring Boot,Data Analysis","Critical Thinking,Time Management,Creativity",4,1
+mid_00006,Mid_Prof_006,mid,4,mid6@email.com,+62-812-75707149,Jakarta,Bachelor,Software Engineering,"TensorFlow,Linux,Data Analysis,Flask,CI/CD,Ruby on Rails","Stakeholder Management,Adaptability,Presentation",3,1
+mid_00007,Mid_Prof_007,mid,2,mid7@email.com,+62-812-64079746,Bandung,Bachelor,Computer Science,"Angular,Spark,Spring Boot,Agile,Linux,Microservices","Time Management,Communication,Mentoring",4,2
+mid_00008,Mid_Prof_008,mid,3,mid8@email.com,+62-812-21910818,Surabaya,Bachelor,Software Engineering,"Laravel,SQL,Spring Boot,GraphQL,Docker,Jenkins","Project Management,Team Management,Collaboration",3,1
+mid_00009,Mid_Prof_009,mid,3,mid9@email.com,+62-812-80586696,Surabaya,Diploma,Information Technology,"Spring Boot,MongoDB,React,Azure,Vue.js,PostgreSQL","Communication,Presentation,Problem Solving",4,1
+mid_00010,Mid_Prof_010,mid,5,mid10@email.com,+62-812-75609056,Bali,Master,Computer Science,"Kubernetes,Git,Terraform,Spark,PyTorch,Agile","Collaboration,Problem Solving,Mentoring",4,2
+mid_00011,Mid_Prof_011,mid,2,mid11@email.com,+62-812-40711747,Yogyakarta,Bachelor,Information Systems,"AWS,Kubernetes,FastAPI,Terraform,C++,JavaScript","Communication,Time Management,Mentoring",2,1
+mid_00012,Mid_Prof_012,mid,3,mid12@email.com,+62-812-96431969,Jakarta,Diploma,Information Technology,"SQL,Redis,Data Analysis,MongoDB,Linux,JavaScript","Project Management,Adaptability,Critical Thinking",2,2
+mid_00013,Mid_Prof_013,mid,3,mid13@email.com,+62-812-96705318,Jakarta,Bachelor,Computer Science,"Flask,SQL,Microservices,FastAPI,Azure,React","Adaptability,Problem Solving,Leadership",2,3
+mid_00014,Mid_Prof_014,mid,4,mid14@email.com,+62-812-14717990,Jakarta,Bachelor,Computer Science,"Terraform,PostgreSQL,Agile,Git,Kubernetes,Jenkins","Project Management,Mentoring,Creativity",2,3
+mid_00015,Mid_Prof_015,mid,3,mid15@email.com,+62-812-12512484,Yogyakarta,Bachelor,Software Engineering,"Git,Microservices,TensorFlow,Angular,NumPy,Spring Boot","Adaptability,Critical Thinking,Leadership",2,3
+mid_00016,Mid_Prof_016,mid,4,mid16@email.com,+62-812-86839260,Bandung,Bachelor,Computer Science,"CI/CD,Linux,GraphQL,Spark,PostgreSQL,Spring Boot","Adaptability,Communication,Team Management",3,2
+mid_00017,Mid_Prof_017,mid,4,mid17@email.com,+62-812-73359138,Bali,Bachelor,Software Engineering,"Laravel,Flask,Kubernetes,Redis,ElasticSearch,Spark","Mentoring,Adaptability,Critical Thinking",4,3
+mid_00018,Mid_Prof_018,mid,5,mid18@email.com,+62-812-46797030,Medan,Master,Computer Science,"Google Cloud,Terraform,Redis,Ruby on Rails,TensorFlow,NumPy","Stakeholder Management,Mentoring,Communication",3,1
+mid_00019,Mid_Prof_019,mid,3,mid19@email.com,+62-812-48284707,Yogyakarta,Bachelor,Computer Science,"Scikit-Learn,SQL,Flask,PyTorch,React,Django","Project Management,Presentation,Mentoring",4,1
+mid_00020,Mid_Prof_020,mid,4,mid20@email.com,+62-812-70195771,Bandung,Bachelor,Information Systems,"CI/CD,NumPy,AWS,Linux,Machine Learning,Jenkins","Time Management,Adaptability,Communication",3,2
+mid_00021,Mid_Prof_021,mid,3,mid21@email.com,+62-812-54546838,Yogyakarta,Bachelor,Engineering,"React,Redis,Flask,Java,Docker,ElasticSearch","Critical Thinking,Problem Solving,Leadership",3,2
+mid_00022,Mid_Prof_022,mid,5,mid22@email.com,+62-812-82021904,Jakarta,Bachelor,Information Technology,"Ruby on Rails,MongoDB,Vue.js,Spring Boot,Data Analysis,Pandas","Problem Solving,Project Management,Time Management",4,2
+mid_00023,Mid_Prof_023,mid,5,mid23@email.com,+62-812-95626203,Yogyakarta,Master,Computer Science,"Microservices,Pandas,Redis,TensorFlow,SQL,Agile","Team Management,Problem Solving,Creativity",4,3
+mid_00024,Mid_Prof_024,mid,2,mid24@email.com,+62-812-75187449,Surabaya,Bachelor,Information Systems,"Flask,MongoDB,Redis,Node.js,Agile,Machine Learning","Time Management,Presentation,Problem Solving",2,3
+mid_00025,Mid_Prof_025,mid,3,mid25@email.com,+62-812-24993506,Jakarta,Bachelor,Engineering,"Azure,REST API,Django,ElasticSearch,MongoDB,FastAPI","Critical Thinking,Presentation,Adaptability",4,3
+mid_00026,Mid_Prof_026,mid,5,mid26@email.com,+62-812-17594069,Surabaya,Bachelor,Engineering,"Laravel,NumPy,Node.js,FastAPI,Microservices,SQL","Time Management,Critical Thinking,Presentation",3,2
+mid_00027,Mid_Prof_027,mid,3,mid27@email.com,+62-812-45610062,Medan,Master,Computer Science,"Google Cloud,ElasticSearch,Terraform,React,Data Analysis,MongoDB","Time Management,Mentoring,Presentation",3,2
+mid_00028,Mid_Prof_028,mid,4,mid28@email.com,+62-812-98684554,Medan,Diploma,Information Technology,"TensorFlow,PostgreSQL,SQL,Data Analysis,REST API,ElasticSearch","Team Management,Presentation,Adaptability",3,3
+mid_00029,Mid_Prof_029,mid,3,mid29@email.com,+62-812-26165085,Medan,Master,Computer Science,"Vue.js,Django,C#,C++,Pandas,Ruby on Rails","Critical Thinking,Adaptability,Time Management",3,3
+mid_00030,Mid_Prof_030,mid,2,mid30@email.com,+62-812-15475205,Bali,Bachelor,Engineering,"Redis,C++,MySQL,Vue.js,Google Cloud,TensorFlow","Critical Thinking,Creativity,Communication",2,1
+mid_00031,Mid_Prof_031,mid,5,mid31@email.com,+62-812-34948010,Jakarta,Bachelor,Information Systems,"REST API,Node.js,Flask,PostgreSQL,Laravel,MongoDB","Leadership,Stakeholder Management,Communication",3,1
+mid_00032,Mid_Prof_032,mid,4,mid32@email.com,+62-812-17610373,Yogyakarta,Master,Computer Science,"Spark,ElasticSearch,Java,Jenkins,Scikit-Learn,Terraform","Time Management,Problem Solving,Mentoring",3,1
+mid_00033,Mid_Prof_033,mid,5,mid33@email.com,+62-812-56737385,Medan,Bachelor,Information Systems,"Spark,MongoDB,ElasticSearch,Terraform,Microservices,Docker","Team Management,Stakeholder Management,Leadership",4,1
+mid_00034,Mid_Prof_034,mid,4,mid34@email.com,+62-812-17126125,Yogyakarta,Bachelor,Software Engineering,"Django,Scikit-Learn,Vue.js,CI/CD,ElasticSearch,Spring Boot","Presentation,Problem Solving,Project Management",4,3
+mid_00035,Mid_Prof_035,mid,5,mid35@email.com,+62-812-35914850,Yogyakarta,Bachelor,Information Technology,"PostgreSQL,TensorFlow,Linux,AWS,Agile,Terraform","Mentoring,Creativity,Critical Thinking",2,2
+mid_00036,Mid_Prof_036,mid,3,mid36@email.com,+62-812-62954249,Medan,Bachelor,Information Technology,"AWS,CI/CD,Ruby on Rails,GraphQL,Scikit-Learn,ElasticSearch","Adaptability,Time Management,Collaboration",3,1
+mid_00037,Mid_Prof_037,mid,2,mid37@email.com,+62-812-62256735,Jakarta,Bachelor,Information Systems,"Redis,FastAPI,Git,Azure,Python,PostgreSQL","Problem Solving,Critical Thinking,Adaptability",3,3
+mid_00038,Mid_Prof_038,mid,3,mid38@email.com,+62-812-40656984,Surabaya,Bachelor,Engineering,"Ruby on Rails,Docker,AWS,Terraform,Google Cloud,Laravel","Team Management,Time Management,Project Management",2,2
+mid_00039,Mid_Prof_039,mid,4,mid39@email.com,+62-812-83434389,Jakarta,Master,Computer Science,"Machine Learning,React,C#,Terraform,AWS,TensorFlow","Stakeholder Management,Team Management,Critical Thinking",2,1
+mid_00040,Mid_Prof_040,mid,4,mid40@email.com,+62-812-71179260,Yogyakarta,Bachelor,Software Engineering,"Java,C++,Git,Google Cloud,GraphQL,ElasticSearch","Mentoring,Communication,Stakeholder Management",2,1
+mid_00041,Mid_Prof_041,mid,5,mid41@email.com,+62-812-74196971,Bandung,Diploma,Information Technology,"Data Analysis,Django,Ruby on Rails,Pandas,C++,ElasticSearch","Team Management,Presentation,Critical Thinking",4,1
+mid_00042,Mid_Prof_042,mid,5,mid42@email.com,+62-812-90686035,Bali,Bachelor,Information Technology,"Agile,Google Cloud,MongoDB,Spark,C#,Node.js","Communication,Time Management,Team Management",3,1
+mid_00043,Mid_Prof_043,mid,4,mid43@email.com,+62-812-76710601,Bandung,Bachelor,Information Technology,"Node.js,Redis,Docker,Azure,Laravel,Linux","Collaboration,Critical Thinking,Problem Solving",2,2
+mid_00044,Mid_Prof_044,mid,5,mid44@email.com,+62-812-76475381,Yogyakarta,Master,Computer Science,"TensorFlow,Machine Learning,Vue.js,CI/CD,Git,Terraform","Adaptability,Creativity,Collaboration",4,3
+mid_00045,Mid_Prof_045,mid,4,mid45@email.com,+62-812-27434849,Surabaya,Bachelor,Computer Science,"Redis,Microservices,MongoDB,Java,Data Analysis,Angular","Time Management,Critical Thinking,Adaptability",2,3
+mid_00046,Mid_Prof_046,mid,2,mid46@email.com,+62-812-76089582,Bali,Bachelor,Engineering,"Azure,MongoDB,Flask,PostgreSQL,AWS,Kubernetes","Mentoring,Problem Solving,Stakeholder Management",3,1
+mid_00047,Mid_Prof_047,mid,2,mid47@email.com,+62-812-46013579,Medan,Diploma,Information Technology,"Java,Laravel,ElasticSearch,Kubernetes,Ruby on Rails,AWS","Presentation,Adaptability,Mentoring",4,1
+mid_00048,Mid_Prof_048,mid,5,mid48@email.com,+62-812-23059257,Surabaya,Bachelor,Engineering,"C#,Microservices,Data Analysis,React,SQL,REST API","Critical Thinking,Mentoring,Stakeholder Management",3,2
+mid_00049,Mid_Prof_049,mid,5,mid49@email.com,+62-812-11120694,Bandung,Bachelor,Information Technology,"C++,MySQL,Flask,Agile,Azure,Terraform","Stakeholder Management,Project Management,Problem Solving",2,2
+mid_00050,Mid_Prof_050,mid,3,mid50@email.com,+62-812-53186835,Surabaya,Bachelor,Computer Science,"Linux,Git,REST API,Data Analysis,Machine Learning,Azure","Critical Thinking,Adaptability,Stakeholder Management",4,2
+mid_00051,Mid_Prof_051,mid,5,mid51@email.com,+62-812-82309171,Yogyakarta,Bachelor,Software Engineering,"Spring Boot,Spark,C++,Flask,C#,Azure","Mentoring,Adaptability,Team Management",2,2
+mid_00052,Mid_Prof_052,mid,5,mid52@email.com,+62-812-69144657,Yogyakarta,Bachelor,Computer Science,"Django,PostgreSQL,MySQL,Python,PyTorch,Scikit-Learn","Creativity,Adaptability,Presentation",3,3
+mid_00053,Mid_Prof_053,mid,2,mid53@email.com,+62-812-97989924,Bali,Bachelor,Computer Science,"Google Cloud,Vue.js,Git,Redis,Azure,Spark","Stakeholder Management,Collaboration,Problem Solving",3,3
+mid_00054,Mid_Prof_054,mid,4,mid54@email.com,+62-812-45210317,Yogyakarta,Diploma,Information Technology,"NumPy,Node.js,PyTorch,CI/CD,Git,FastAPI","Collaboration,Stakeholder Management,Time Management",2,2
+mid_00055,Mid_Prof_055,mid,2,mid55@email.com,+62-812-99077347,Surabaya,Bachelor,Computer Science,"TensorFlow,Spark,Machine Learning,REST API,Angular,Django","Communication,Team Management,Creativity",2,2
+mid_00056,Mid_Prof_056,mid,3,mid56@email.com,+62-812-60342229,Bandung,Bachelor,Software Engineering,"REST API,GraphQL,Git,Ruby on Rails,Angular,Spark","Team Management,Project Management,Problem Solving",2,2
+mid_00057,Mid_Prof_057,mid,3,mid57@email.com,+62-812-43806067,Jakarta,Bachelor,Engineering,"Redis,FastAPI,Agile,ElasticSearch,Java,PyTorch","Communication,Team Management,Collaboration",4,3
+mid_00058,Mid_Prof_058,mid,3,mid58@email.com,+62-812-37298643,Bali,Master,Computer Science,"Git,CI/CD,Terraform,REST API,Spark,NumPy","Team Management,Collaboration,Project Management",4,2
+mid_00059,Mid_Prof_059,mid,3,mid59@email.com,+62-812-49398990,Jakarta,Bachelor,Engineering,"Scikit-Learn,CI/CD,Angular,Docker,Redis,C#","Stakeholder Management,Creativity,Project Management",2,3
+mid_00060,Mid_Prof_060,mid,4,mid60@email.com,+62-812-26472239,Bandung,Bachelor,Software Engineering,"NumPy,ElasticSearch,Terraform,C++,Google Cloud,Agile","Collaboration,Leadership,Adaptability",2,3
+mid_00061,Mid_Prof_061,mid,2,mid61@email.com,+62-812-73264942,Jakarta,Master,Computer Science,"Django,FastAPI,Ruby on Rails,SQL,CI/CD,Pandas","Time Management,Leadership,Mentoring",3,1
+mid_00062,Mid_Prof_062,mid,5,mid62@email.com,+62-812-54785806,Bandung,Diploma,Information Technology,"Spring Boot,NumPy,AWS,REST API,MySQL,TensorFlow","Presentation,Adaptability,Collaboration",2,1
+mid_00063,Mid_Prof_063,mid,4,mid63@email.com,+62-812-48451545,Bandung,Bachelor,Engineering,"Microservices,Agile,Docker,Ruby on Rails,Laravel,Django","Stakeholder Management,Mentoring,Team Management",4,2
+mid_00064,Mid_Prof_064,mid,4,mid64@email.com,+62-812-34583860,Surabaya,Bachelor,Information Technology,"Spring Boot,MySQL,Kubernetes,Pandas,FastAPI,React","Creativity,Presentation,Collaboration",3,2
+mid_00065,Mid_Prof_065,mid,5,mid65@email.com,+62-812-37946648,Jakarta,Bachelor,Engineering,"Spring Boot,Microservices,Azure,AWS,JavaScript,Python","Mentoring,Time Management,Leadership",3,3
+mid_00066,Mid_Prof_066,mid,2,mid66@email.com,+62-812-88825960,Bali,Bachelor,Software Engineering,"Java,C#,Kubernetes,PostgreSQL,Laravel,Angular","Collaboration,Problem Solving,Presentation",3,3
+mid_00067,Mid_Prof_067,mid,2,mid67@email.com,+62-812-50715321,Medan,Bachelor,Information Systems,"AWS,FastAPI,Spring Boot,Laravel,Angular,Java","Problem Solving,Team Management,Project Management",3,1
+mid_00068,Mid_Prof_068,mid,3,mid68@email.com,+62-812-49957833,Surabaya,Bachelor,Engineering,"React,Redis,Python,C++,Spark,PyTorch","Project Management,Time Management,Team Management",2,1
+mid_00069,Mid_Prof_069,mid,5,mid69@email.com,+62-812-39585491,Yogyakarta,Bachelor,Computer Science,"Machine Learning,Node.js,JavaScript,Terraform,Vue.js,C++","Communication,Presentation,Team Management",4,2
+mid_00070,Mid_Prof_070,mid,3,mid70@email.com,+62-812-10282847,Yogyakarta,Bachelor,Computer Science,"ElasticSearch,React,FastAPI,Ruby on Rails,MongoDB,PostgreSQL","Team Management,Leadership,Presentation",4,2
+mid_00071,Mid_Prof_071,mid,2,mid71@email.com,+62-812-74884211,Bandung,Master,Computer Science,"TensorFlow,Terraform,Node.js,PyTorch,Angular,Redis","Problem Solving,Mentoring,Creativity",3,2
+mid_00072,Mid_Prof_072,mid,4,mid72@email.com,+62-812-81092637,Medan,Bachelor,Information Systems,"Data Analysis,Azure,Vue.js,Spark,FastAPI,ElasticSearch","Time Management,Creativity,Stakeholder Management",4,1
+mid_00073,Mid_Prof_073,mid,5,mid73@email.com,+62-812-80659209,Bandung,Bachelor,Engineering,"Machine Learning,PyTorch,MongoDB,React,Linux,Microservices","Critical Thinking,Creativity,Mentoring",4,2
+mid_00074,Mid_Prof_074,mid,3,mid74@email.com,+62-812-13548080,Bali,Bachelor,Computer Science,"Java,Redis,Pandas,GraphQL,Spring Boot,Ruby on Rails","Stakeholder Management,Adaptability,Presentation",4,1
+mid_00075,Mid_Prof_075,mid,5,mid75@email.com,+62-812-10551182,Bandung,Master,Computer Science,"C++,C#,React,Google Cloud,SQL,REST API","Collaboration,Time Management,Stakeholder Management",3,1
+mid_00076,Mid_Prof_076,mid,5,mid76@email.com,+62-812-45919062,Bandung,Diploma,Information Technology,"Azure,JavaScript,SQL,Django,Scikit-Learn,TensorFlow","Stakeholder Management,Creativity,Critical Thinking",2,2
+mid_00077,Mid_Prof_077,mid,2,mid77@email.com,+62-812-83675679,Yogyakarta,Diploma,Information Technology,"ElasticSearch,Laravel,Linux,AWS,CI/CD,Microservices","Critical Thinking,Adaptability,Time Management",3,3
+mid_00078,Mid_Prof_078,mid,3,mid78@email.com,+62-812-92362048,Yogyakarta,Bachelor,Information Technology,"Django,Ruby on Rails,Pandas,Terraform,Agile,Spark","Presentation,Critical Thinking,Adaptability",4,2
+mid_00079,Mid_Prof_079,mid,2,mid79@email.com,+62-812-55978230,Yogyakarta,Master,Computer Science,"PyTorch,REST API,C++,MySQL,Laravel,Azure","Critical Thinking,Presentation,Adaptability",2,2
+mid_00080,Mid_Prof_080,mid,4,mid80@email.com,+62-812-59430744,Bali,Bachelor,Information Systems,"MongoDB,Git,GraphQL,Google Cloud,Ruby on Rails,Machine Learning","Problem Solving,Adaptability,Team Management",4,3
+mid_00081,Mid_Prof_081,mid,5,mid81@email.com,+62-812-34149711,Jakarta,Master,Computer Science,"SQL,React,Flask,Google Cloud,CI/CD,MySQL","Collaboration,Stakeholder Management,Adaptability",3,1
+mid_00082,Mid_Prof_082,mid,4,mid82@email.com,+62-812-56561654,Bandung,Bachelor,Information Systems,"Spring Boot,Flask,FastAPI,PostgreSQL,Docker,C++","Stakeholder Management,Creativity,Mentoring",3,3
+mid_00083,Mid_Prof_083,mid,3,mid83@email.com,+62-812-37388842,Bali,Diploma,Information Technology,"Node.js,PyTorch,Ruby on Rails,ElasticSearch,Java,Azure","Problem Solving,Project Management,Collaboration",4,1
+mid_00084,Mid_Prof_084,mid,4,mid84@email.com,+62-812-67633826,Medan,Bachelor,Information Technology,"Microservices,C++,Redis,Data Analysis,Azure,Agile","Adaptability,Project Management,Stakeholder Management",4,1
+mid_00085,Mid_Prof_085,mid,4,mid85@email.com,+62-812-33502871,Bali,Bachelor,Engineering,"Terraform,Pandas,Linux,Python,Google Cloud,C++","Problem Solving,Collaboration,Adaptability",3,2
+mid_00086,Mid_Prof_086,mid,3,mid86@email.com,+62-812-89702849,Jakarta,Bachelor,Information Technology,"Agile,Data Analysis,C#,Pandas,CI/CD,JavaScript","Mentoring,Team Management,Stakeholder Management",4,1
+mid_00087,Mid_Prof_087,mid,3,mid87@email.com,+62-812-93051029,Bandung,Master,Computer Science,"Git,PostgreSQL,MongoDB,SQL,PyTorch,Azure","Project Management,Problem Solving,Team Management",3,1
+mid_00088,Mid_Prof_088,mid,3,mid88@email.com,+62-812-87950821,Surabaya,Bachelor,Information Systems,"Data Analysis,Node.js,MySQL,NumPy,MongoDB,Django","Critical Thinking,Presentation,Collaboration",2,2
+mid_00089,Mid_Prof_089,mid,4,mid89@email.com,+62-812-47510514,Bali,Master,Computer Science,"Docker,Scikit-Learn,PyTorch,AWS,Pandas,Data Analysis","Adaptability,Leadership,Time Management",4,2
+mid_00090,Mid_Prof_090,mid,5,mid90@email.com,+62-812-64643512,Bandung,Bachelor,Information Systems,"Angular,AWS,Flask,Git,Machine Learning,Terraform","Mentoring,Team Management,Communication",3,1
+mid_00091,Mid_Prof_091,mid,3,mid91@email.com,+62-812-72817853,Bali,Bachelor,Engineering,"Redis,Docker,Scikit-Learn,JavaScript,Agile,NumPy","Problem Solving,Presentation,Collaboration",2,1
+mid_00092,Mid_Prof_092,mid,5,mid92@email.com,+62-812-86400183,Bandung,Bachelor,Information Technology,"Pandas,Terraform,CI/CD,REST API,Redis,Java","Mentoring,Leadership,Adaptability",2,2
+mid_00093,Mid_Prof_093,mid,2,mid93@email.com,+62-812-10865632,Medan,Bachelor,Information Systems,"Jenkins,Pandas,Scikit-Learn,Azure,GraphQL,Git","Problem Solving,Adaptability,Critical Thinking",2,1
+mid_00094,Mid_Prof_094,mid,3,mid94@email.com,+62-812-41477100,Yogyakarta,Diploma,Information Technology,"FastAPI,Spark,Spring Boot,Redis,React,MySQL","Stakeholder Management,Mentoring,Time Management",3,1
+mid_00095,Mid_Prof_095,mid,4,mid95@email.com,+62-812-40864310,Medan,Diploma,Information Technology,"SQL,Jenkins,Spring Boot,Python,AWS,JavaScript","Team Management,Presentation,Adaptability",2,2
+mid_00096,Mid_Prof_096,mid,2,mid96@email.com,+62-812-54855115,Jakarta,Bachelor,Computer Science,"Data Analysis,Spring Boot,Pandas,Agile,Django,Jenkins","Project Management,Critical Thinking,Adaptability",4,2
+mid_00097,Mid_Prof_097,mid,4,mid97@email.com,+62-812-70778233,Yogyakarta,Bachelor,Software Engineering,"Node.js,Flask,Data Analysis,Python,Kubernetes,Vue.js","Problem Solving,Creativity,Leadership",4,3
+mid_00098,Mid_Prof_098,mid,5,mid98@email.com,+62-812-99564431,Surabaya,Bachelor,Engineering,"SQL,Laravel,Microservices,Vue.js,CI/CD,NumPy","Presentation,Project Management,Leadership",4,3
+mid_00099,Mid_Prof_099,mid,5,mid99@email.com,+62-812-45978214,Yogyakarta,Master,Computer Science,"Jenkins,Agile,REST API,Java,SQL,Scikit-Learn","Adaptability,Team Management,Leadership",2,1
