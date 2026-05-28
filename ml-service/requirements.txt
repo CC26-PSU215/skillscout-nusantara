@@ -4,9 +4,7 @@ uvicorn[standard]>=0.34,<1.0
 pydantic>=2.0,<3.0
 
 # ── ML / Deep Learning ─────────────────────────────
-# tensorflow-cpu jauh lebih kecil dari tensorflow biasa
-# (~400MB vs ~2GB+, tanpa GPU/CUDA dependencies)
-tensorflow-cpu>=2.18
+tensorflow>=2.18
 numpy>=1.26
 
 # ── Tokenizer serialization ────────────────────────
