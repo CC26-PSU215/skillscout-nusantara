@@ -12,5 +12,8 @@ ai/*.h5
 
 # Allow model files in ml-service (needed for Railway deploy)
 !ml-service/best_model.keras
-!ml-service/tokenizer.pkl
+!ml-service/tokenizer.joblib
 
+# Old tokenizer format (no longer used)
+ml-service/tokenizer.pkl
+ml-service/tokenizer_compat.py

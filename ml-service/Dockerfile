@@ -1,3 +1,8 @@
+# ═══════════════════════════════════════════════════════════
+# SkillScout Nusantara — ML Service Dockerfile
+# Platform: Railway / Render / Docker
+# ═══════════════════════════════════════════════════════════
+
 # ── Build stage ──────────────────────────────────────
 FROM python:3.11-slim AS builder
 
@@ -22,8 +27,15 @@ COPY . .
 ENV PORT=8001
 ENV PYTHONUNBUFFERED=1
 
+# Default env vars (dapat di-override via Railway dashboard)
+ENV MODEL_PATH=best_model.keras
+ENV TOKENIZER_PATH=tokenizer.joblib
+ENV MAX_LENGTH=256
+ENV BATCH_SIZE=32
+ENV ALLOWED_ORIGINS=*
+
 # Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:${PORT}/health')" || exit 1
 
 # Start server — use PORT env var (Railway requirement)

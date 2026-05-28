@@ -1,12 +1,7 @@
 __pycache__/
 *.pyc
-*.pyo
 .git
 .gitignore
 .env
-.venv/
-venv/
+README.md
 *.md
-tests/
-.pytest_cache/
-.mypy_cache/
