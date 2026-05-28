@@ -1,33 +1,22 @@
 # ═══════════════════════════════════════════════════════════
 # SkillScout Nusantara — ML Service Dockerfile
-# Platform: Railway / Render / Docker
+# Platform: Render / Railway / Docker
 # ═══════════════════════════════════════════════════════════
 
-# ── Build stage ──────────────────────────────────────
-FROM python:3.11-slim AS builder
-
-WORKDIR /app
-
-# Install dependencies dulu (cache layer)
-COPY requirements.txt .
-RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
-
-# ── Runtime stage ────────────────────────────────────
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy installed packages
-COPY --from=builder /install /usr/local
+# Install dependencies (single layer, no multi-stage untuk Render)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app files
 COPY . .
 
-# Railway sets PORT env var automatically
+# Env vars (Render sets PORT automatically)
 ENV PORT=8001
 ENV PYTHONUNBUFFERED=1
-
-# Default env vars (dapat di-override via Railway dashboard)
 ENV MODEL_PATH=best_model.keras
 ENV TOKENIZER_PATH=tokenizer.joblib
 ENV MAX_LENGTH=256
@@ -38,5 +27,5 @@ ENV ALLOWED_ORIGINS=*
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:${PORT}/health')" || exit 1
 
-# Start server — use PORT env var (Railway requirement)
+# Start server
 CMD uvicorn main:app --host 0.0.0.0 --port ${PORT} --workers 1
