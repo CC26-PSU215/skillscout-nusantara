@@ -1,2 +1,16 @@
 /backend/.env
 /backend/__pycache__/
+
+# Virtual environments
+.venv/
+/tmp/skillscout-venv/
+
+# AI training artifacts (large files, don't commit)
+ai/*.pkl
+ai/*.keras
+ai/*.h5
+
+# Allow model files in ml-service (needed for Railway deploy)
+!ml-service/best_model.keras
+!ml-service/tokenizer.pkl
+

@@ -1,0 +1,14 @@
+# ── Core ────────────────────────────────────────────
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.34,<1.0
+pydantic>=2.0,<3.0
+
+# ── ML / Deep Learning ─────────────────────────────
+tensorflow>=2.18
+numpy>=1.26
+
+# ── Fallback matcher (TF-IDF) ──────────────────────
+scikit-learn>=1.5,<2.0
+
+# ── Production ASGI server ─────────────────────────
+gunicorn>=22.0

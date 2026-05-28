@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
@@ -15,7 +16,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins,
+    allow_origin_regex=".*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -29,3 +30,7 @@ app.include_router(match.router, prefix="/api/match",tags=["Matching"])
 @app.get("/api/health", tags=["Health"])
 async def health():
     return {"status": "ok", "service": "skillscout-api"}
+
+@app.get("/", include_in_schema=False)
+async def root():
+    return RedirectResponse(url="/api/docs")

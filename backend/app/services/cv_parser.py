@@ -80,8 +80,21 @@ def extract_skills(text: str) -> List[str]:
 
     # Cari single-word skill dengan word boundary
     single_word = [s for s in SKILL_GAZETTEER if " " not in s]
-    for skill in single_word:
+
+    # Skills yang mengandung karakter non-word (c++, c#)
+    # tidak bisa pakai \b — gunakan lookaround khusus
+    special_char_skills = [s for s in single_word if re.search(r"[^\w]", s)]
+    normal_skills = [s for s in single_word if not re.search(r"[^\w]", s)]
+
+    for skill in normal_skills:
         pattern = r"\b" + re.escape(skill) + r"\b"
+        if re.search(pattern, text_lower):
+            found.add(skill)
+
+    for skill in special_char_skills:
+        # Cari skill yang diawali oleh awal string / non-alphanumeric
+        # dan diakhiri oleh akhir string / non-alphanumeric
+        pattern = r"(?<![a-zA-Z0-9])" + re.escape(skill) + r"(?![a-zA-Z0-9])"
         if re.search(pattern, text_lower):
             found.add(skill)
 
