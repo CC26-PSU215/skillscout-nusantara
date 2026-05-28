@@ -4,8 +4,8 @@ uvicorn[standard]>=0.34,<1.0
 pydantic>=2.0,<3.0
 
 # ── ML / Deep Learning ─────────────────────────────
-# Pakai tensorflow-cpu (lebih kecil, tanpa GPU dependencies)
-# Full tensorflow ~2GB+, tensorflow-cpu ~400MB
+# tensorflow-cpu jauh lebih kecil dari tensorflow biasa
+# (~400MB vs ~2GB+, tanpa GPU/CUDA dependencies)
 tensorflow-cpu>=2.18
 numpy>=1.26
 
