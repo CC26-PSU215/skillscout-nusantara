@@ -17,3 +17,9 @@ ai/*.h5
 # Old tokenizer format (no longer used)
 ml-service/tokenizer.pkl
 ml-service/tokenizer_compat.py
+
+# dokumentasi dan integrasi
+doc/
+docs/
+dokumentasi/
+integrasi/
