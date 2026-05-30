@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Upload, Briefcase, Brain, Zap, Shield, ArrowRight, Sparkles, Target } from "lucide-react";
+import { Upload, Briefcase, Brain, Zap, Shield, ArrowRight, Sparkles, Target, BarChart3 } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -90,6 +90,7 @@ export default function HomePage() {
           {[
             { icon: Brain, title: "Deep Learning", desc: "Siamese BiLSTM TensorFlow" },
             { icon: Zap, title: "CV Parser", desc: "Ekstraksi skill bilingual" },
+            { icon: BarChart3, title: "Tren Skill", desc: "Prediksi demand skill" },
             { icon: Shield, title: "Fallback Cerdas", desc: "TF-IDF jika ML offline" },
             { icon: Briefcase, title: "800+ Lowongan", desc: "Data dari Glints & lainnya" },
             { icon: Sparkles, title: "Skill Gap", desc: "Rekomendasi skill belajar" },
