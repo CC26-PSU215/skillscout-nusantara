@@ -102,8 +102,12 @@ def _load_model():
     try:
         from tensorflow import keras
 
+        # Enable unsafe deserialization untuk Lambda layers
+        # (L2Normalize / Dot layer di Siamese model menggunakan lambda)
+        keras.config.enable_unsafe_deserialization()
+
         logger.info(f"📦 Loading model dari '{MODEL_PATH}'...")
-        model = keras.models.load_model(str(model_file))
+        model = keras.models.load_model(str(model_file), safe_mode=False)
         logger.info(f"✅ Model loaded: {model.name}")
     except Exception as e:
         logger.error(f"❌ Gagal load model: {e}")

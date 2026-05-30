@@ -95,16 +95,7 @@ export default function Footer() {
             >
               Lowongan Kerja
             </Link>
-            <Link
-              href="/trends"
-              style={{
-                color: "var(--text-muted)",
-                fontSize: "0.875rem",
-                transition: "var(--transition-fast)",
-              }}
-            >
-              Tren Skill
-            </Link>
+            {/* Tren Skill — disabled sementara */}
           </div>
         </div>
 
