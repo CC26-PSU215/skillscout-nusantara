@@ -85,6 +85,20 @@ tokenizer = None
 model_loaded = False
 
 
+# ── Custom Objects untuk Keras 3.x ───────────────────────────
+# Keras 3.x membutuhkan output_shape eksplisit pada Lambda layers.
+# Model Siamese BiLSTM menggunakan Lambda untuk L2 normalization
+# pada output Dense(64) → Lambda(l2_normalize) → shape tetap (None, 64).
+#
+# Solusi: Definisikan fungsi L2 normalize dengan nama yang sama
+# dan register sebagai custom_objects saat load model.
+
+def _l2_normalize(x):
+    """L2 normalize — identik dengan lambda di training notebook."""
+    import tensorflow as tf
+    return tf.math.l2_normalize(x, axis=1)
+
+
 def _load_model():
     """Load model dan tokenizer saat startup. Graceful jika file tidak ada."""
     global model, tokenizer, model_loaded
@@ -101,14 +115,64 @@ def _load_model():
 
     try:
         from tensorflow import keras
+        import tensorflow as tf
 
         # Enable unsafe deserialization untuk Lambda layers
         # (L2Normalize / Dot layer di Siamese model menggunakan lambda)
         keras.config.enable_unsafe_deserialization()
 
         logger.info(f"📦 Loading model dari '{MODEL_PATH}'...")
-        model = keras.models.load_model(str(model_file), safe_mode=False)
-        logger.info(f"✅ Model loaded: {model.name}")
+
+        # ── FIX: Register custom objects untuk Keras 3.x ─────
+        # Keras 3.x tidak bisa auto-infer output_shape dari Lambda.
+        # Kita register fungsi L2 normalize agar Lambda layer
+        # bisa di-reconstruct dengan benar saat loading.
+        custom_objects = {
+            "l2_normalize": _l2_normalize,
+            # Juga register tf.math.l2_normalize langsung
+            "l2_normalize_1": _l2_normalize,
+        }
+
+        try:
+            # Coba load dengan custom objects dulu
+            model = keras.models.load_model(
+                str(model_file),
+                safe_mode=False,
+                custom_objects=custom_objects,
+            )
+            logger.info(f"✅ Model loaded (custom_objects): {model.name}")
+        except Exception as e1:
+            logger.warning(f"⚠️  Load dengan custom_objects gagal: {e1}")
+            logger.info("🔄 Mencoba rebuild model secara manual...")
+
+            # ── Fallback: Rebuild model arsitektur & load weights ──
+            # Jika .keras file tidak bisa di-load langsung karena
+            # Lambda layer incompatibility, kita rebuild arsitektur
+            # dan load weights dari file yang sama.
+            try:
+                model = _rebuild_siamese_model()
+                # Coba load weights dari file .keras
+                # (keras file = arsitektur + weights)
+                model.load_weights(str(model_file))
+                logger.info(f"✅ Model loaded (rebuild + weights): {model.name}")
+            except Exception as e2:
+                logger.warning(f"⚠️  Rebuild juga gagal: {e2}")
+                logger.info("🔄 Mencoba load dengan compile=False...")
+
+                try:
+                    # Last resort: load tanpa compile
+                    with keras.utils.custom_object_scope(custom_objects):
+                        model = keras.models.load_model(
+                            str(model_file),
+                            safe_mode=False,
+                            compile=False,
+                        )
+                    logger.info(f"✅ Model loaded (compile=False): {model.name}")
+                except Exception as e3:
+                    logger.error(f"❌ Semua metode load gagal: {e3}")
+                    model = None
+                    return
+
     except Exception as e:
         logger.error(f"❌ Gagal load model: {e}")
         return
@@ -140,6 +204,71 @@ def _load_model():
         logger.error(f"❌ Gagal load tokenizer: {e}")
         logger.error("   Detail error untuk debugging:", exc_info=True)
         model = None
+
+
+def _rebuild_siamese_model():
+    """
+    Rebuild arsitektur Siamese BiLSTM secara manual.
+    Ini digunakan sebagai fallback jika keras.models.load_model gagal
+    karena Lambda layer incompatibility di Keras 3.x.
+
+    Arsitektur harus IDENTIK dengan ai/model.ipynb:
+      - vocab_size=10000, embedding_dim=300, max_length=256
+      - BiLSTM(128) → BiLSTM(64) → Dense(64) → L2Norm
+      - Dot product similarity
+    """
+    from tensorflow import keras
+    import tensorflow as tf
+
+    vocab_size = 10000
+    embedding_dim = 300
+    lstm_units_1 = 128
+    lstm_units_2 = 64
+    dense_units = 64
+    dropout_rate = 0.2
+
+    # ── Shared Encoder ───────────────────────────────
+    input_layer = keras.layers.Input(shape=(MAX_LENGTH,))
+    embedding = keras.layers.Embedding(
+        vocab_size, embedding_dim, mask_zero=True
+    )(input_layer)
+    x = keras.layers.Bidirectional(
+        keras.layers.LSTM(lstm_units_1, return_sequences=True)
+    )(embedding)
+    x = keras.layers.Dropout(dropout_rate)(x)
+    x = keras.layers.Bidirectional(
+        keras.layers.LSTM(lstm_units_2)
+    )(x)
+    x = keras.layers.Dropout(dropout_rate)(x)
+    x = keras.layers.Dense(dense_units, activation="relu")(x)
+    # L2 normalize dengan output_shape eksplisit
+    x = keras.layers.Lambda(
+        _l2_normalize,
+        output_shape=(dense_units,),
+        name="l2_normalize",
+    )(x)
+
+    encoder = keras.Model(input_layer, x, name="skillscout_nusantara")
+
+    # ── Siamese Network ─────────────────────────────
+    cv_input = keras.layers.Input(shape=(MAX_LENGTH,), name="cv_input")
+    job_input = keras.layers.Input(shape=(MAX_LENGTH,), name="job_input")
+
+    cv_encoded = encoder(cv_input)
+    job_encoded = encoder(job_input)
+
+    similarity = keras.layers.Dot(axes=1, normalize=False)(
+        [cv_encoded, job_encoded]
+    )
+
+    siamese = keras.Model(
+        inputs=[cv_input, job_input],
+        outputs=similarity,
+        name="siamese_bilstm",
+    )
+
+    siamese.compile(optimizer="adam", loss="mse", metrics=["mae"])
+    return siamese
 
 
 # ── Lifespan (startup/shutdown) ──────────────────────────────
