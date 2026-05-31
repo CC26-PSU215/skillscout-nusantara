@@ -1,5 +1,5 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Upload, FileText, Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { uploadCV } from "@/app/lib/api";
@@ -11,6 +11,11 @@ export default function CVUploadForm() {
   const [uploading, setUploading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+
+  // ── Throttle: prevent double-click on upload ──────────────
+  // Tombol upload hanya bisa diklik 1x. Setelah diklik,
+  // tidak bisa diklik lagi sampai proses selesai.
+  const isSubmitting = useRef(false);
 
   const handleDrag = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -33,7 +38,11 @@ export default function CVUploadForm() {
   };
 
   const handleSubmit = async () => {
-    if (!file) return;
+    // ── Throttle guard: cegah double-click ──
+    // Jika sudah dalam proses upload, abaikan klik berikutnya.
+    if (!file || isSubmitting.current) return;
+    isSubmitting.current = true;
+
     setUploading(true);
     setStatus("idle");
     setMessage("");
@@ -46,8 +55,12 @@ export default function CVUploadForm() {
     } catch (err: unknown) {
       setStatus("error");
       setMessage(err instanceof Error ? err.message : "Upload gagal.");
+      // Reset throttle saat error agar user bisa coba lagi
+      isSubmitting.current = false;
     } finally {
       setUploading(false);
+      // Jangan reset isSubmitting saat sukses (akan redirect)
+      // Reset saat error sudah dilakukan di catch
     }
   };
 
@@ -91,7 +104,7 @@ export default function CVUploadForm() {
         )}
       </div>
 
-      {/* Submit */}
+      {/* Submit — disabled saat uploading (throttle visual) */}
       <button
         className="btn btn-primary btn-lg"
         style={{ width: "100%", marginTop: 20 }}

@@ -15,10 +15,14 @@ export class ApiError extends Error {
   }
 }
 
-/** Generic GET request */
-export async function apiGet<T>(endpoint: string): Promise<T> {
+/** Generic GET request (with optional AbortSignal for cancellation) */
+export async function apiGet<T>(
+  endpoint: string,
+  signal?: AbortSignal
+): Promise<T> {
   const res = await fetch(`${API_BASE}${endpoint}`, {
     cache: "no-store",
+    signal,
   });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
@@ -73,13 +77,14 @@ import type {
   TrendResponse,
 } from "@/app/types/api";
 
-/** List lowongan (paginated + filter) */
+/** List lowongan (paginated + filter, supports cancellation) */
 export function getJobs(params?: {
   page?: number;
   per_page?: number;
   location?: string;
   skill?: string;
   search?: string;
+  signal?: AbortSignal;
 }): Promise<JobListResponse> {
   const q = new URLSearchParams();
   if (params?.page) q.set("page", String(params.page));
@@ -88,7 +93,7 @@ export function getJobs(params?: {
   if (params?.skill) q.set("skill", params.skill);
   if (params?.search) q.set("search", params.search);
   const qs = q.toString();
-  return apiGet<JobListResponse>(`/api/jobs${qs ? `?${qs}` : ""}`);
+  return apiGet<JobListResponse>(`/api/jobs${qs ? `?${qs}` : ""}`, params?.signal);
 }
 
 /** Detail satu lowongan */

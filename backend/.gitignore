@@ -11,6 +11,8 @@ env/
 # Environment variables
 .env
 .env.example
+.env.production
+.env.development
 
 # IDE
 .vscode/
