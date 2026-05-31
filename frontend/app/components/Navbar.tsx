@@ -16,7 +16,6 @@ const NAV_ITEMS = [
   { href: "/",        label: "Beranda",  icon: Zap },
   { href: "/upload",  label: "Upload CV", icon: Upload },
   { href: "/jobs",    label: "Lowongan",  icon: Briefcase },
-  // { href: "/trends",  label: "Tren Skill", icon: TrendingUp }, // disabled sementara
 ];
 
 export default function Navbar() {

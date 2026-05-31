@@ -95,7 +95,6 @@ export default function Footer() {
             >
               Lowongan Kerja
             </Link>
-            {/* Tren Skill — disabled sementara */}
           </div>
         </div>
 
