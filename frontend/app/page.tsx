@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Upload, Briefcase, Brain, Zap, Shield, ArrowRight, Sparkles, Target, BarChart3 } from "lucide-react";
+import StatsRow from "@/app/components/StatsRow";
 
 export default function HomePage() {
   return (
@@ -33,19 +34,8 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Stats row */}
-          <div style={{ display: "flex", gap: 48, justifyContent: "center", marginTop: 64, flexWrap: "wrap" }}>
-            {[
-              { num: "800+", label: "Lowongan" },
-              { num: "505", label: "CV Dianalisis" },
-              { num: "AI", label: "Siamese BiLSTM" },
-            ].map(s => (
-              <div key={s.label} style={{ textAlign: "center" }}>
-                <div style={{ fontSize: "2rem", fontWeight: 800, background: "var(--gradient-primary)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>{s.num}</div>
-                <div style={{ fontSize: "0.875rem", color: "var(--text-muted)" }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
+          {/* Stats row — real-time dari database */}
+          <StatsRow />
         </div>
       </section>
 
@@ -92,7 +82,7 @@ export default function HomePage() {
             { icon: Zap, title: "CV Parser", desc: "Ekstraksi skill bilingual" },
             { icon: BarChart3, title: "Tren Skill", desc: "Prediksi demand skill" },
             { icon: Shield, title: "Fallback Cerdas", desc: "TF-IDF jika ML offline" },
-            { icon: Briefcase, title: "800+ Lowongan", desc: "Data dari Glints & lainnya" },
+            { icon: Briefcase, title: "Lowongan Real-time", desc: "Data dari Glints, auto-update" },
             { icon: Sparkles, title: "Skill Gap", desc: "Rekomendasi skill belajar" },
           ].map((f) => {
             const Icon = f.icon;

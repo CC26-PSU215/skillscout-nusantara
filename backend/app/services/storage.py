@@ -50,3 +50,20 @@ async def get_public_url(storage_path: str) -> str:
         storage_path
     )
     return response
+
+
+async def delete_from_supabase(storage_path: str) -> bool:
+    """Hapus file dari Supabase Storage."""
+    from supabase import create_client
+    import logging
+
+    logger = logging.getLogger(__name__)
+    supabase = create_client(settings.supabase_url, settings.supabase_service_key)
+
+    try:
+        supabase.storage.from_(settings.supabase_bucket).remove([storage_path])
+        return True
+    except Exception as e:
+        logger.error(f"Gagal menghapus file {storage_path} dari Supabase: {e}")
+        return False
+

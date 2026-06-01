@@ -65,9 +65,8 @@ export default function Navbar() {
               height: 32,
               borderRadius: "var(--radius-sm)",
               background: "var(--gradient-primary)",
-            }}
           >
-            <Search size={16} color="#fff" />
+            <img src="/favicon.ico" alt="SkillScout Logo" width={20} height={20} style={{ borderRadius: '50%', objectFit: 'cover' }} />
           </span>
           <span>
             Skill<span style={{ color: "var(--primary-400)" }}>Scout</span>

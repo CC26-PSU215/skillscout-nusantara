@@ -18,6 +18,16 @@
       "dest": "api/index.py"
     }
   ],
+  "crons": [
+    {
+      "path": "/api/scrape/trigger",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cv/cleanup",
+      "schedule": "0 1 * * *"
+    }
+  ],
   "env": {
     "PYTHONPATH": "."
   }
