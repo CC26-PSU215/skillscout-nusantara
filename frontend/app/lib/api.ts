@@ -127,6 +127,11 @@ export function getTrends(): Promise<TrendResponse> {
   return apiGet<TrendResponse>("/api/match/trends");
 }
 
+/** Statistik lowongan (real-time dari database) */
+export function getJobStats(): Promise<{ total_jobs: number; total_companies: number }> {
+  return apiGet("/api/jobs/stats/summary");
+}
+
 /** Health check */
 export function healthCheck(): Promise<{ status: string; service: string }> {
   return apiGet("/api/health");

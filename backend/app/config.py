@@ -29,6 +29,12 @@ class Settings(BaseSettings):
     ml_service_url: str = "http://localhost:8001"
     ml_service_timeout: int = 30
 
+    # ── Scraping ─────────────────────────────────────────────
+    scrape_interval_hours: int = 24
+    enable_scrape_scheduler: bool = False
+    scrape_api_key: str = ""
+    scrape_pages: int = 5
+
     # ── CORS ────────────────────────────────────────────────
     cors_origins: List[str] = ["http://localhost:3000"]
 

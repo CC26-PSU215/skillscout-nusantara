@@ -26,6 +26,12 @@ Sastrawi>=1.0.1,<2.0  # stemmer Bahasa Indonesia
 # ── ML / Matching ───────────────────────────────────────────
 scikit-learn>=1.5,<2.0
 
+# ── Scraping & Data Processing ──────────────────────────────
+beautifulsoup4>=4.12
+lxml>=5.0
+pandas>=2.0,<3.0
+apscheduler>=3.10,<4.0
+
 # ── Testing ─────────────────────────────────────────────────
 pytest>=8.0,<9.0
 pytest-asyncio>=0.24,<1.0
