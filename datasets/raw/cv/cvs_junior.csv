@@ -1,0 +1,101 @@
+cv_id,name,experience_level,years_experience,email,phone,location,education_degree,education_field,technical_skills,soft_skills,num_jobs,num_certifications
+junior_00000,Junior_Prof_000,junior,2,junior0@email.com,+62-812-46042393,Yogyakarta,Diploma,Information Technology,"Azure,Agile,Jenkins,Docker","Team Management,Stakeholder Management,Mentoring",2,1
+junior_00001,Junior_Prof_001,junior,2,junior1@email.com,+62-812-98579989,Surabaya,Bachelor,Information Technology,"PostgreSQL,Jenkins,Google Cloud,Python","Creativity,Collaboration,Critical Thinking",3,0
+junior_00002,Junior_Prof_002,junior,1,junior2@email.com,+62-812-19988935,Bali,Bachelor,Information Systems,"Flask,MySQL,Linux,Angular","Creativity,Communication,Critical Thinking",1,1
+junior_00003,Junior_Prof_003,junior,0,junior3@email.com,+62-812-51053760,Bali,Bachelor,Information Technology,"Machine Learning,AWS,Linux,MongoDB","Project Management,Presentation,Communication",2,2
+junior_00004,Junior_Prof_004,junior,0,junior4@email.com,+62-812-69094185,Medan,Bachelor,Engineering,"REST API,Machine Learning,Linux,Spring Boot","Team Management,Leadership,Mentoring",3,0
+junior_00005,Junior_Prof_005,junior,1,junior5@email.com,+62-812-54754845,Medan,Master,Computer Science,"AWS,Vue.js,CI/CD,Flask","Collaboration,Problem Solving,Presentation",3,1
+junior_00006,Junior_Prof_006,junior,1,junior6@email.com,+62-812-57555524,Surabaya,Diploma,Information Technology,"Java,Jenkins,MongoDB,GraphQL","Presentation,Communication,Creativity",2,2
+junior_00007,Junior_Prof_007,junior,0,junior7@email.com,+62-812-19816210,Bali,Bachelor,Software Engineering,"Docker,Machine Learning,Ruby on Rails,PyTorch","Creativity,Team Management,Time Management",2,1
+junior_00008,Junior_Prof_008,junior,2,junior8@email.com,+62-812-70492993,Bali,Bachelor,Software Engineering,"MongoDB,MySQL,Ruby on Rails,FastAPI","Adaptability,Creativity,Team Management",1,1
+junior_00009,Junior_Prof_009,junior,0,junior9@email.com,+62-812-89694721,Yogyakarta,Bachelor,Engineering,"Python,Linux,C#,Flask","Creativity,Communication,Stakeholder Management",1,1
+junior_00010,Junior_Prof_010,junior,2,junior10@email.com,+62-812-29474266,Bandung,Master,Computer Science,"Redis,React,Angular,Spark","Collaboration,Creativity,Stakeholder Management",1,2
+junior_00011,Junior_Prof_011,junior,2,junior11@email.com,+62-812-20186966,Medan,Bachelor,Engineering,"Git,GraphQL,Agile,Spring Boot","Critical Thinking,Team Management,Collaboration",2,1
+junior_00012,Junior_Prof_012,junior,1,junior12@email.com,+62-812-72535303,Medan,Bachelor,Computer Science,"Jenkins,Flask,Django,Kubernetes","Communication,Problem Solving,Project Management",3,2
+junior_00013,Junior_Prof_013,junior,0,junior13@email.com,+62-812-54309054,Surabaya,Bachelor,Computer Science,"Angular,Spring Boot,Vue.js,SQL","Team Management,Problem Solving,Presentation",2,1
+junior_00014,Junior_Prof_014,junior,2,junior14@email.com,+62-812-71452102,Jakarta,Bachelor,Computer Science,"PostgreSQL,Data Analysis,Jenkins,Linux","Project Management,Time Management,Team Management",1,0
+junior_00015,Junior_Prof_015,junior,1,junior15@email.com,+62-812-47321992,Medan,Bachelor,Software Engineering,"Angular,Vue.js,Linux,Scikit-Learn","Leadership,Creativity,Adaptability",3,0
+junior_00016,Junior_Prof_016,junior,2,junior16@email.com,+62-812-71557230,Bandung,Bachelor,Information Technology,"Microservices,TensorFlow,Kubernetes,C++","Stakeholder Management,Critical Thinking,Team Management",3,1
+junior_00017,Junior_Prof_017,junior,2,junior17@email.com,+62-812-60155160,Bali,Bachelor,Information Systems,"Machine Learning,Spring Boot,Scikit-Learn,C#","Problem Solving,Project Management,Creativity",2,2
+junior_00018,Junior_Prof_018,junior,2,junior18@email.com,+62-812-29128172,Medan,Master,Computer Science,"AWS,React,PostgreSQL,JavaScript","Adaptability,Collaboration,Project Management",2,1
+junior_00019,Junior_Prof_019,junior,2,junior19@email.com,+62-812-48094399,Surabaya,Bachelor,Software Engineering,"Flask,MySQL,REST API,Azure","Communication,Problem Solving,Presentation",2,2
+junior_00020,Junior_Prof_020,junior,1,junior20@email.com,+62-812-90230934,Surabaya,Bachelor,Computer Science,"PostgreSQL,MySQL,Data Analysis,Spark","Critical Thinking,Stakeholder Management,Team Management",2,1
+junior_00021,Junior_Prof_021,junior,1,junior21@email.com,+62-812-14625804,Medan,Bachelor,Information Technology,"Microservices,MySQL,GraphQL,Vue.js","Leadership,Project Management,Collaboration",1,0
+junior_00022,Junior_Prof_022,junior,0,junior22@email.com,+62-812-21050750,Jakarta,Bachelor,Computer Science,"CI/CD,TensorFlow,Machine Learning,React","Creativity,Team Management,Project Management",2,0
+junior_00023,Junior_Prof_023,junior,2,junior23@email.com,+62-812-62046758,Medan,Bachelor,Information Systems,"CI/CD,SQL,Terraform,JavaScript","Communication,Presentation,Leadership",1,1
+junior_00024,Junior_Prof_024,junior,1,junior24@email.com,+62-812-98721723,Bandung,Bachelor,Computer Science,"Spring Boot,Pandas,Git,Data Analysis","Problem Solving,Team Management,Stakeholder Management",1,1
+junior_00025,Junior_Prof_025,junior,0,junior25@email.com,+62-812-62512887,Bandung,Bachelor,Information Technology,"JavaScript,Java,TensorFlow,Pandas","Team Management,Creativity,Communication",2,0
+junior_00026,Junior_Prof_026,junior,1,junior26@email.com,+62-812-47303075,Surabaya,Master,Computer Science,"MySQL,Django,TensorFlow,AWS","Creativity,Project Management,Problem Solving",1,1
+junior_00027,Junior_Prof_027,junior,0,junior27@email.com,+62-812-62935163,Yogyakarta,Bachelor,Computer Science,"C++,Terraform,PostgreSQL,JavaScript","Presentation,Critical Thinking,Leadership",3,0
+junior_00028,Junior_Prof_028,junior,2,junior28@email.com,+62-812-12505973,Bandung,Bachelor,Computer Science,"Pandas,React,Linux,PyTorch","Team Management,Leadership,Problem Solving",2,0
+junior_00029,Junior_Prof_029,junior,2,junior29@email.com,+62-812-37767625,Yogyakarta,Bachelor,Software Engineering,"PyTorch,Pandas,Java,JavaScript","Communication,Presentation,Time Management",1,1
+junior_00030,Junior_Prof_030,junior,2,junior30@email.com,+62-812-27030746,Bali,Bachelor,Engineering,"JavaScript,Python,MongoDB,Java","Problem Solving,Time Management,Critical Thinking",1,0
+junior_00031,Junior_Prof_031,junior,1,junior31@email.com,+62-812-96618422,Bandung,Bachelor,Engineering,"AWS,PyTorch,React,Laravel","Time Management,Project Management,Problem Solving",2,0
+junior_00032,Junior_Prof_032,junior,0,junior32@email.com,+62-812-34811614,Jakarta,Master,Computer Science,"Django,Git,Spring Boot,SQL","Adaptability,Time Management,Project Management",2,0
+junior_00033,Junior_Prof_033,junior,2,junior33@email.com,+62-812-98327223,Bali,Diploma,Information Technology,"Vue.js,Agile,Docker,PyTorch","Mentoring,Stakeholder Management,Leadership",2,2
+junior_00034,Junior_Prof_034,junior,1,junior34@email.com,+62-812-19506102,Jakarta,Diploma,Information Technology,"REST API,React,Laravel,Docker","Team Management,Leadership,Communication",1,2
+junior_00035,Junior_Prof_035,junior,2,junior35@email.com,+62-812-80799696,Bali,Diploma,Information Technology,"Django,Flask,SQL,NumPy","Team Management,Leadership,Creativity",3,0
+junior_00036,Junior_Prof_036,junior,2,junior36@email.com,+62-812-10117940,Bali,Bachelor,Engineering,"Microservices,Django,Python,Java","Stakeholder Management,Presentation,Problem Solving",1,1
+junior_00037,Junior_Prof_037,junior,2,junior37@email.com,+62-812-51452438,Surabaya,Bachelor,Software Engineering,"FastAPI,GraphQL,NumPy,Angular","Adaptability,Leadership,Stakeholder Management",1,1
+junior_00038,Junior_Prof_038,junior,2,junior38@email.com,+62-812-21345961,Jakarta,Bachelor,Computer Science,"C#,CI/CD,Python,MongoDB","Team Management,Problem Solving,Mentoring",3,2
+junior_00039,Junior_Prof_039,junior,1,junior39@email.com,+62-812-95857612,Surabaya,Bachelor,Engineering,"Python,Kubernetes,Microservices,CI/CD","Problem Solving,Mentoring,Leadership",3,1
+junior_00040,Junior_Prof_040,junior,2,junior40@email.com,+62-812-92300305,Yogyakarta,Diploma,Information Technology,"MySQL,Jenkins,TensorFlow,Node.js","Leadership,Mentoring,Collaboration",1,0
+junior_00041,Junior_Prof_041,junior,1,junior41@email.com,+62-812-18046378,Surabaya,Master,Computer Science,"Spark,Spring Boot,Data Analysis,React","Mentoring,Presentation,Leadership",2,2
+junior_00042,Junior_Prof_042,junior,0,junior42@email.com,+62-812-89645109,Medan,Master,Computer Science,"Google Cloud,AWS,Jenkins,Java","Problem Solving,Time Management,Leadership",3,0
+junior_00043,Junior_Prof_043,junior,0,junior43@email.com,+62-812-69472535,Bandung,Bachelor,Information Technology,"Python,Ruby on Rails,Machine Learning,Vue.js","Adaptability,Critical Thinking,Communication",3,0
+junior_00044,Junior_Prof_044,junior,0,junior44@email.com,+62-812-45613046,Yogyakarta,Bachelor,Computer Science,"Ruby on Rails,Scikit-Learn,Flask,JavaScript","Critical Thinking,Presentation,Mentoring",1,0
+junior_00045,Junior_Prof_045,junior,0,junior45@email.com,+62-812-78856369,Jakarta,Bachelor,Information Systems,"C#,Microservices,Jenkins,Redis","Presentation,Problem Solving,Adaptability",3,0
+junior_00046,Junior_Prof_046,junior,1,junior46@email.com,+62-812-25470039,Bali,Bachelor,Information Systems,"JavaScript,TensorFlow,Jenkins,C++","Stakeholder Management,Team Management,Presentation",2,2
+junior_00047,Junior_Prof_047,junior,1,junior47@email.com,+62-812-18483580,Bali,Bachelor,Information Systems,"MySQL,Ruby on Rails,Scikit-Learn,MongoDB","Stakeholder Management,Time Management,Mentoring",1,2
+junior_00048,Junior_Prof_048,junior,0,junior48@email.com,+62-812-56340785,Medan,Bachelor,Information Technology,"Azure,Scikit-Learn,Jenkins,Python","Project Management,Team Management,Stakeholder Management",2,2
+junior_00049,Junior_Prof_049,junior,0,junior49@email.com,+62-812-33932304,Yogyakarta,Master,Computer Science,"Git,Docker,Data Analysis,Angular","Presentation,Collaboration,Stakeholder Management",2,1
+junior_00050,Junior_Prof_050,junior,0,junior50@email.com,+62-812-13323890,Medan,Bachelor,Computer Science,"Git,Ruby on Rails,PostgreSQL,Agile","Time Management,Problem Solving,Team Management",3,1
+junior_00051,Junior_Prof_051,junior,1,junior51@email.com,+62-812-20758493,Bali,Bachelor,Information Systems,"CI/CD,Microservices,NumPy,Java","Problem Solving,Leadership,Creativity",3,2
+junior_00052,Junior_Prof_052,junior,2,junior52@email.com,+62-812-70520839,Bali,Diploma,Information Technology,"SQL,REST API,Linux,Java","Team Management,Adaptability,Critical Thinking",3,0
+junior_00053,Junior_Prof_053,junior,1,junior53@email.com,+62-812-24618087,Jakarta,Diploma,Information Technology,"AWS,Spring Boot,MongoDB,Data Analysis","Problem Solving,Mentoring,Team Management",1,0
+junior_00054,Junior_Prof_054,junior,0,junior54@email.com,+62-812-18011000,Yogyakarta,Bachelor,Computer Science,"ElasticSearch,Spark,Vue.js,AWS","Critical Thinking,Collaboration,Team Management",3,1
+junior_00055,Junior_Prof_055,junior,1,junior55@email.com,+62-812-66320693,Bandung,Bachelor,Information Technology,"Docker,SQL,Kubernetes,JavaScript","Mentoring,Communication,Collaboration",3,0
+junior_00056,Junior_Prof_056,junior,0,junior56@email.com,+62-812-53697885,Jakarta,Bachelor,Engineering,"MySQL,Google Cloud,TensorFlow,Angular","Creativity,Critical Thinking,Mentoring",2,1
+junior_00057,Junior_Prof_057,junior,1,junior57@email.com,+62-812-73797142,Jakarta,Bachelor,Engineering,"MongoDB,Redis,NumPy,C#","Project Management,Time Management,Leadership",3,0
+junior_00058,Junior_Prof_058,junior,2,junior58@email.com,+62-812-73770329,Medan,Bachelor,Software Engineering,"Spring Boot,MongoDB,Kubernetes,Jenkins","Team Management,Problem Solving,Critical Thinking",1,0
+junior_00059,Junior_Prof_059,junior,0,junior59@email.com,+62-812-36012199,Yogyakarta,Bachelor,Engineering,"ElasticSearch,Angular,Google Cloud,C++","Mentoring,Time Management,Stakeholder Management",1,1
+junior_00060,Junior_Prof_060,junior,1,junior60@email.com,+62-812-50098538,Jakarta,Diploma,Information Technology,"Git,TensorFlow,Machine Learning,Python","Collaboration,Creativity,Mentoring",2,1
+junior_00061,Junior_Prof_061,junior,0,junior61@email.com,+62-812-94084916,Surabaya,Bachelor,Computer Science,"GraphQL,Google Cloud,JavaScript,Git","Adaptability,Collaboration,Mentoring",1,0
+junior_00062,Junior_Prof_062,junior,1,junior62@email.com,+62-812-52592514,Bali,Bachelor,Software Engineering,"JavaScript,Linux,Redis,TensorFlow","Critical Thinking,Problem Solving,Leadership",3,2
+junior_00063,Junior_Prof_063,junior,2,junior63@email.com,+62-812-72901256,Medan,Bachelor,Information Technology,"Flask,GraphQL,Google Cloud,NumPy","Problem Solving,Communication,Critical Thinking",3,0
+junior_00064,Junior_Prof_064,junior,1,junior64@email.com,+62-812-31602896,Jakarta,Bachelor,Information Technology,"PyTorch,Node.js,Ruby on Rails,SQL","Collaboration,Team Management,Critical Thinking",1,2
+junior_00065,Junior_Prof_065,junior,2,junior65@email.com,+62-812-10738970,Surabaya,Bachelor,Information Technology,"Machine Learning,Laravel,Spring Boot,SQL","Leadership,Adaptability,Mentoring",3,2
+junior_00066,Junior_Prof_066,junior,0,junior66@email.com,+62-812-49415387,Medan,Bachelor,Software Engineering,"Docker,FastAPI,Jenkins,Azure","Stakeholder Management,Time Management,Creativity",2,2
+junior_00067,Junior_Prof_067,junior,0,junior67@email.com,+62-812-98416882,Surabaya,Bachelor,Information Technology,"PostgreSQL,TensorFlow,NumPy,Google Cloud","Mentoring,Presentation,Time Management",3,1
+junior_00068,Junior_Prof_068,junior,0,junior68@email.com,+62-812-88373123,Yogyakarta,Bachelor,Computer Science,"AWS,Spark,REST API,CI/CD","Time Management,Presentation,Team Management",1,0
+junior_00069,Junior_Prof_069,junior,2,junior69@email.com,+62-812-71866499,Jakarta,Bachelor,Computer Science,"Scikit-Learn,REST API,MongoDB,SQL","Mentoring,Collaboration,Problem Solving",2,0
+junior_00070,Junior_Prof_070,junior,0,junior70@email.com,+62-812-86929715,Jakarta,Bachelor,Engineering,"C#,SQL,PyTorch,Django","Time Management,Mentoring,Team Management",2,1
+junior_00071,Junior_Prof_071,junior,0,junior71@email.com,+62-812-36183070,Jakarta,Diploma,Information Technology,"Spring Boot,Data Analysis,MongoDB,React","Collaboration,Problem Solving,Leadership",2,0
+junior_00072,Junior_Prof_072,junior,1,junior72@email.com,+62-812-33511964,Surabaya,Diploma,Information Technology,"Linux,C#,Vue.js,JavaScript","Team Management,Creativity,Leadership",3,2
+junior_00073,Junior_Prof_073,junior,2,junior73@email.com,+62-812-66889872,Bali,Bachelor,Engineering,"PostgreSQL,Spark,Python,Git","Presentation,Team Management,Communication",2,0
+junior_00074,Junior_Prof_074,junior,1,junior74@email.com,+62-812-86619452,Bali,Bachelor,Engineering,"GraphQL,Terraform,Laravel,C#","Communication,Presentation,Leadership",1,1
+junior_00075,Junior_Prof_075,junior,0,junior75@email.com,+62-812-68456282,Jakarta,Bachelor,Computer Science,"NumPy,REST API,Git,Java","Project Management,Time Management,Adaptability",3,2
+junior_00076,Junior_Prof_076,junior,2,junior76@email.com,+62-812-98619352,Bali,Diploma,Information Technology,"Machine Learning,ElasticSearch,TensorFlow,FastAPI","Stakeholder Management,Collaboration,Creativity",1,1
+junior_00077,Junior_Prof_077,junior,2,junior77@email.com,+62-812-42075127,Bandung,Bachelor,Engineering,"Node.js,JavaScript,Pandas,Vue.js","Creativity,Mentoring,Adaptability",2,0
+junior_00078,Junior_Prof_078,junior,0,junior78@email.com,+62-812-94834039,Bandung,Bachelor,Information Technology,"Machine Learning,PyTorch,Agile,Kubernetes","Communication,Leadership,Team Management",2,2
+junior_00079,Junior_Prof_079,junior,0,junior79@email.com,+62-812-85666362,Bali,Master,Computer Science,"Ruby on Rails,ElasticSearch,Azure,Django","Collaboration,Project Management,Team Management",2,1
+junior_00080,Junior_Prof_080,junior,2,junior80@email.com,+62-812-46284290,Bali,Bachelor,Engineering,"Pandas,Django,Ruby on Rails,C#","Project Management,Adaptability,Collaboration",2,1
+junior_00081,Junior_Prof_081,junior,0,junior81@email.com,+62-812-66115202,Medan,Diploma,Information Technology,"Linux,Vue.js,Spark,Laravel","Critical Thinking,Mentoring,Collaboration",3,0
+junior_00082,Junior_Prof_082,junior,0,junior82@email.com,+62-812-86223856,Medan,Bachelor,Engineering,"MySQL,Laravel,Java,JavaScript","Critical Thinking,Creativity,Communication",1,0
+junior_00083,Junior_Prof_083,junior,2,junior83@email.com,+62-812-58700777,Bandung,Bachelor,Information Technology,"TensorFlow,Redis,Agile,JavaScript","Project Management,Stakeholder Management,Problem Solving",1,2
+junior_00084,Junior_Prof_084,junior,0,junior84@email.com,+62-812-99785472,Jakarta,Bachelor,Information Technology,"Laravel,Agile,Spark,JavaScript","Problem Solving,Leadership,Communication",3,1
+junior_00085,Junior_Prof_085,junior,1,junior85@email.com,+62-812-92618180,Bali,Bachelor,Information Technology,"Git,MongoDB,Jenkins,React","Presentation,Problem Solving,Adaptability",2,2
+junior_00086,Junior_Prof_086,junior,0,junior86@email.com,+62-812-88692029,Surabaya,Bachelor,Engineering,"Flask,Redis,Jenkins,Ruby on Rails","Presentation,Communication,Collaboration",2,0
+junior_00087,Junior_Prof_087,junior,2,junior87@email.com,+62-812-23724449,Bandung,Bachelor,Information Technology,"AWS,ElasticSearch,Scikit-Learn,MongoDB","Team Management,Problem Solving,Collaboration",2,2
+junior_00088,Junior_Prof_088,junior,0,junior88@email.com,+62-812-79163859,Yogyakarta,Diploma,Information Technology,"Scikit-Learn,Google Cloud,TensorFlow,REST API","Problem Solving,Team Management,Leadership",1,1
+junior_00089,Junior_Prof_089,junior,0,junior89@email.com,+62-812-52477106,Surabaya,Master,Computer Science,"Spring Boot,Vue.js,Google Cloud,Redis","Collaboration,Leadership,Presentation",1,0
+junior_00090,Junior_Prof_090,junior,1,junior90@email.com,+62-812-15397952,Yogyakarta,Master,Computer Science,"MySQL,Angular,C#,Node.js","Adaptability,Presentation,Team Management",2,0
+junior_00091,Junior_Prof_091,junior,0,junior91@email.com,+62-812-27348336,Bandung,Bachelor,Information Systems,"Kubernetes,C++,Laravel,Data Analysis","Time Management,Communication,Leadership",1,1
+junior_00092,Junior_Prof_092,junior,1,junior92@email.com,+62-812-59150704,Yogyakarta,Diploma,Information Technology,"MySQL,Kubernetes,Microservices,Django","Problem Solving,Team Management,Adaptability",3,2
+junior_00093,Junior_Prof_093,junior,0,junior93@email.com,+62-812-71991983,Surabaya,Bachelor,Information Technology,"Flask,Docker,Kubernetes,NumPy","Problem Solving,Communication,Adaptability",2,2
+junior_00094,Junior_Prof_094,junior,0,junior94@email.com,+62-812-66770676,Medan,Bachelor,Computer Science,"Redis,NumPy,Agile,Scikit-Learn","Mentoring,Creativity,Time Management",3,0
+junior_00095,Junior_Prof_095,junior,0,junior95@email.com,+62-812-89497758,Medan,Master,Computer Science,"C#,C++,Azure,Java","Collaboration,Creativity,Critical Thinking",3,2
+junior_00096,Junior_Prof_096,junior,0,junior96@email.com,+62-812-41027709,Bandung,Bachelor,Information Systems,"Django,Machine Learning,Python,Angular","Creativity,Adaptability,Leadership",3,1
+junior_00097,Junior_Prof_097,junior,0,junior97@email.com,+62-812-24664089,Bali,Diploma,Information Technology,"AWS,Django,C++,Terraform","Creativity,Stakeholder Management,Leadership",2,2
+junior_00098,Junior_Prof_098,junior,2,junior98@email.com,+62-812-90911856,Yogyakarta,Bachelor,Information Systems,"Azure,PostgreSQL,Flask,Terraform","Team Management,Creativity,Collaboration",3,2
+junior_00099,Junior_Prof_099,junior,0,junior99@email.com,+62-812-91630528,Yogyakarta,Master,Computer Science,"MongoDB,AWS,PostgreSQL,Spark","Presentation,Stakeholder Management,Adaptability",2,1
