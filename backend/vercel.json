@@ -2,13 +2,33 @@
   "builds": [
     {
       "src": "api/index.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "api/index.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "api/index.py"
     }
-  ]
+  ],
+  "crons": [
+    {
+      "path": "/api/scrape/trigger",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cv/cleanup",
+      "schedule": "0 1 * * *"
+    }
+  ],
+  "env": {
+    "PYTHONPATH": "."
+  }
 }

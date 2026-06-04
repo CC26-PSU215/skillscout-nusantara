@@ -1,8 +1,9 @@
 """
 Router: /api/jobs
-- GET  /api/jobs       → daftar lowongan (filter & pagination)
-- GET  /api/jobs/{id}  → detail satu lowongan
-- POST /api/jobs       → tambah lowongan baru (untuk scraper/admin)
+- GET  /api/jobs              → daftar lowongan (filter & pagination)
+- GET  /api/jobs/stats/summary → statistik lowongan (real-time)
+- GET  /api/jobs/{id}         → detail satu lowongan
+- POST /api/jobs              → tambah lowongan baru (untuk scraper/admin)
 """
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import func, select
@@ -56,6 +57,24 @@ async def list_jobs(
         per_page=per_page,
         data=jobs,
     )
+
+
+# ⚠️ Static path HARUS sebelum /{job_id} agar tidak di-match sebagai parameter
+@router.get("/stats/summary")
+async def job_stats(db: AsyncSession = Depends(get_db)):
+    """Statistik lowongan — dipakai homepage untuk menampilkan angka real-time."""
+    total_result = await db.execute(select(func.count(Job.id)))
+    total_jobs = total_result.scalar_one()
+
+    company_result = await db.execute(
+        select(func.count(func.distinct(Job.company)))
+    )
+    total_companies = company_result.scalar_one()
+
+    return {
+        "total_jobs": total_jobs,
+        "total_companies": total_companies,
+    }
 
 
 @router.get("/{job_id}", response_model=JobResponse)

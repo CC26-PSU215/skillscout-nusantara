@@ -3,16 +3,18 @@ Router: /api/cv
 - POST /api/cv/upload  → upload PDF, ekstrak teks & skills
 - GET  /api/cv/{cv_id} → ambil detail CV yang sudah diproses
 """
-from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
+from fastapi import APIRouter, UploadFile, File, HTTPException, Depends, Header
+from typing import Optional
+from datetime import datetime, timedelta
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
+from sqlalchemy import select, delete
 
 from app.database import get_db
 from app.config import settings
 from app.db.models import CVUpload
 from app.models.schemas import CVUploadResponse
 from app.services.cv_parser import extract_text_from_pdf, extract_skills
-from app.services.storage import upload_to_supabase
+from app.services.storage import upload_to_supabase, delete_from_supabase
 
 router = APIRouter()
 
@@ -63,3 +65,39 @@ async def get_cv(cv_id: str, db: AsyncSession = Depends(get_db)):
     if not cv:
         raise HTTPException(404, detail="CV tidak ditemukan.")
     return cv
+
+
+@router.post("/cleanup")
+async def cleanup_old_cvs(
+    x_api_key: Optional[str] = Header(None, alias="X-API-Key"),
+    db: AsyncSession = Depends(get_db),
+):
+    """
+    Endpoint untuk menghapus semua CV yang diupload lebih dari 24 jam yang lalu.
+    Menghapus file fisik dari Supabase Storage dan record dari Database.
+    Dilindungi dengan API key yang sama dengan endpoint scraping.
+    """
+    if settings.scrape_api_key and x_api_key != settings.scrape_api_key:
+        raise HTTPException(status_code=403, detail="API key tidak valid.")
+
+    cutoff_time = datetime.utcnow() - timedelta(hours=24)
+    
+    # Ambil CV yang sudah kedaluwarsa
+    result = await db.execute(select(CVUpload).where(CVUpload.uploaded_at < cutoff_time))
+    expired_cvs = result.scalars().all()
+
+    if not expired_cvs:
+        return {"message": "Tidak ada CV kedaluwarsa.", "deleted": 0}
+
+    deleted_count = 0
+    for cv in expired_cvs:
+        # 1. Hapus dari Supabase Storage
+        success = await delete_from_supabase(cv.storage_path)
+        if success:
+            # 2. Hapus dari Database
+            await db.execute(delete(CVUpload).where(CVUpload.id == cv.id))
+            deleted_count += 1
+            
+    # get_db dependency will auto-commit
+    return {"message": f"Berhasil menghapus {deleted_count} CV kedaluwarsa.", "deleted": deleted_count}
+
