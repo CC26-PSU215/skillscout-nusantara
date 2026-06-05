@@ -25,3 +25,4 @@ dokumentasi/
 integrasi/
 
 ml-service/logs/
+ml-service/__pycache__

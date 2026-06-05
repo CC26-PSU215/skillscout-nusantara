@@ -478,12 +478,23 @@ async def rank_jobs_endpoint(req: RankRequest):
             results = []
             for idx, job in enumerate(req.jobs):
                 matched, gap = compute_skill_match(req.cv_text, job.skills)
+                
+                # Calculate explicit skill match ratio
+                job_skill_set = set(s.lower() for s in job.skills)
+                skill_score = len(matched) / max(len(job_skill_set), 1)
+                
+                # Multiplicative penalty: if no skills match, heavily penalize the ML score.
+                # skill_factor ranges from 0.05 (0 skills matched) to 1.0 (all skills matched).
+                # This prevents the model from giving high scores on zero-skill CVs.
+                skill_factor = 0.05 + 0.95 * skill_score  # floor at 5%
+                combined_score = float(scores[idx]) * skill_factor
+                
                 results.append(
                     MatchResult(
                         job_id=job.id,
                         title=job.title,
                         company=job.company,
-                        score=round(scores[idx], 4),
+                        score=round(combined_score, 4),
                         matched_skills=matched,
                         gap_skills=gap,
                     )

@@ -14,16 +14,23 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./backend/migrations/init.sql:/docker-entrypoint-initdb.d/01-init.sql
+      - ./backend/migrations/seed_glints_jobs.sql:/docker-entrypoint-initdb.d/02-seed.sql
 
   backend:
+    image: skillscout_backend_img
     build:
       context: ./backend
     container_name: skillscout_backend
     restart: always
     depends_on:
       - db
+      - ml-service
+    env_file:
+      - ./backend/.env
     environment:
-      - DATABASE_URL=postgresql://postgres:supersecretpassword@db:5432/skillscout_db
+      - DATABASE_URL=postgresql+asyncpg://postgres:supersecretpassword@db:5432/skillscout_db
+      - ML_SERVICE_URL=http://ml-service:8001
     ports:
       - "8000:8000"
     volumes:
@@ -33,7 +40,22 @@ services:
     #   - "traefik.enable=true"
     #   - "traefik.http.routers.backend.rule=Host(`api.skillscout.local`)"
 
+  ml-service:
+    image: skillscout_ml_img
+    build:
+      context: ./ml-service
+    container_name: skillscout_ml
+    restart: always
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./ml-service:/app
+    environment:
+      - PORT=8001
+      - ALLOWED_ORIGINS=*
+
   frontend:
+    image: skillscout_frontend_img
     build:
       context: ./frontend
     container_name: skillscout_frontend

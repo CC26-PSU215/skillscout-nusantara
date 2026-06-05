@@ -21,6 +21,7 @@ WORKDIR /app
 COPY --from=builder /install /usr/local
 
 # Copy app files
+RUN echo "Cache bust for COPY"
 COPY . .
 
 # Railway sets PORT env var automatically

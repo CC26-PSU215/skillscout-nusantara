@@ -2,7 +2,7 @@ __pycache__/
 *.pyc
 .git
 .gitignore
-.env
-README.md
-*.md
 .venv/
+.env
+*.md
+tests/
